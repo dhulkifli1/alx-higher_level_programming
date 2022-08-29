@@ -8,7 +8,7 @@ def replace_in_list(my_list, idx, element):
     else:
         for index, old_element in enumerate(my_list):
             if index != idx:
-                new_list.append(old_element)
-            else:
-                new_list.append(element)
-        return new_list
+                continue
+            elif index == idx:
+                my_list[index] = element
+        return my_list
