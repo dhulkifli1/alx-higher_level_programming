@@ -40,8 +40,7 @@ class Square:
 
         if self.__size == 0:
             print("")
-        else:
-            for height in range(self.__size):
-                for width in range(self.__size):
-                    print("#", end = "")
-                print("")
+        for height in range(self.__size):
+            for width in range(self.__size):
+                print("#", end = "")
+            print("")
