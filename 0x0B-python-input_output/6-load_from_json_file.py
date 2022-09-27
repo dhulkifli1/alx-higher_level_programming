@@ -8,4 +8,5 @@ def load_from_json_file(filename):
 
     with open(filename, 'w', encoding = 'UTF-8') as myFile:
         for element in myFile:
-            return json.loads(element)
+            x = json.loads(element)
+        return x
