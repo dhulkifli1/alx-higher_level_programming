@@ -13,4 +13,4 @@ class Base:
             self.id = id
         else:
             type(self).__nb_objects += 1
-            self.id = id
+            self.id = type(self).__nb_objects
