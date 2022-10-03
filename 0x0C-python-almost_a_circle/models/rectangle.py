@@ -94,7 +94,11 @@ class Rectangle(Base):
     def display(self):
         """Prints in stdout the Rectangle with the character #"""
 
+        for top_offset in range(self.y):
+            print("")
         for height in range(self.height):
+            for right_offset in range(self.x):
+                print("", end="")
             for width in range(self.width):
                 print("#", end="")
             print("")
