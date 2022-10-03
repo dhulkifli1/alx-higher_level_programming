@@ -102,3 +102,18 @@ class Rectangle(Base):
             for width in range(self.width):
                 print("#", end="")
             print("")
+
+    def update(self, *args):
+        """Assigns an argument to each attribute"""
+
+        for idx, val in enumerate(args):
+            if idx == 0:
+                self.id = val
+            elif idx == 1:
+                self.width = val
+            elif idx == 2:
+                self.height = val
+            elif idx == 3:
+                self.x = val
+            elif idx == 4:
+                self.y = val
