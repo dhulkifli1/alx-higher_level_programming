@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Contains a Rectangle class"""
-from models.rectangle import Rectangle
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -98,7 +98,7 @@ class Rectangle(Base):
             print("")
         for height in range(self.height):
             for right_offset in range(self.x):
-                print("", end="")
+                print(" ", end="")
             for width in range(self.width):
                 print("#", end="")
             print("")
