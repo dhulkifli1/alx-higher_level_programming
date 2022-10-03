@@ -129,3 +129,14 @@ class Rectangle(Base):
                 self.x = value
             elif key == "y":
                 self.y = value
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Rectangle"""
+
+        my_dict = {}
+        my_dict["id"] = self.id
+        my_dict["width"] = self.width
+        my_dict["height"] = self.height
+        my_dict["x"] = self.x
+        my_dict["y"] = self.y
+        return my_dict
