@@ -8,7 +8,7 @@ function secondBiggest (myList) {
     console.log('0');
   } else {
     const sndLastIndex = myListLength - 2;
-    myList.sort(function(a, b) {
+    myList.sort(function (a, b) {
       return a - b;
     });
     console.log(myList[sndLastIndex]);
