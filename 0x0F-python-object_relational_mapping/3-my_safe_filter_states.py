@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''
 Displays values in the states table where name matches the argument
-
 This time, the script is safe from SQL injections
 '''
 
