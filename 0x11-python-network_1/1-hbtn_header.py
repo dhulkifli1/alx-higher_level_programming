@@ -11,6 +11,7 @@ if __name__ == '__main__':
 
     url = sys.argv[1]
     req = urllib.request.Request(url)
-    with urllib.response.urlopen(url) as response:
+    with urllib.response.urlopen(req) as response:
         body = response.read()
-        print(X-Request-Id)
+        id = body.headers.get('X-Request-Id')
+        print(id)
